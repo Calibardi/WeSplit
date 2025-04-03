@@ -68,7 +68,7 @@ struct WeSplitHomeView: View {
                     .pickerStyle(.wheel)
                     .frame(height: 150)
                 } header: {
-                    Text("Choose a tip")
+                    Text("Scroll to choose a tip")
                 }
                 
                 Section {
