@@ -13,7 +13,10 @@ import SwiftUI
  1. Add a header to the third section, saying “Amount per person” - Done
  2 .Add another section showing the total amount for the check – i.e., the original amount plus tip value, without dividing by the number of people. - Done
  3. Change the tip percentage picker to show a new screen rather than using a segmented control, and give it a wider range of options – everything from 0% to 100%. Tip: use the range 0..<101 for your range rather than a fixed array. - Done, i preferred to use a wheel although
- 
+ 4. Use a conditional modifier to change the total amount text view to red if the user selects a 0% tip - Done
+        {
+            Made the tip calculated amount red instead
+        }
  */
 
 struct WeSplitHomeView: View {
@@ -74,6 +77,7 @@ struct WeSplitHomeView: View {
                 Section {
                     amountSummaryRow("Total", amount)
                     amountSummaryRow("Tip", tipAmount)
+                        .alerted(tipAmount == 0.0)
                 }.listRowBackground(Color.clear)
                 
                 Section {

@@ -32,8 +32,8 @@
 		E35E332D2D9D489400DB37B4 = {
 			isa = PBXGroup;
 			children = (
-				E35E33382D9D489400DB37B4 /* WeSplit */,
 				E35E33372D9D489400DB37B4 /* Products */,
+				E35E33382D9D489400DB37B4 /* WeSplit */,
 			);
 			sourceTree = "<group>";
 		};
