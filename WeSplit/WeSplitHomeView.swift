@@ -114,6 +114,10 @@ struct WeSplitHomeView: View {
     }
 }
 
-#Preview {
+#Preview("Home View") {
+    WeSplitHomeView()
+}
+
+#Preview("Home View - Landscape", traits: .landscapeLeft) {
     WeSplitHomeView()
 }
