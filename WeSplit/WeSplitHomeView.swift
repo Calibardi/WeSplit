@@ -15,7 +15,7 @@ import SwiftUI
  3. Change the tip percentage picker to show a new screen rather than using a segmented control, and give it a wider range of options – everything from 0% to 100%. Tip: use the range 0..<101 for your range rather than a fixed array. - Done, i preferred to use a wheel although
  4. Use a conditional modifier to change the total amount text view to red if the user selects a 0% tip - Done
         {
-            Made the tip calculated amount red instead
+            Made the tip calculated amount red instead, and used a modifier extension rather than a conditional one
         }
  */
 
